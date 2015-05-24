@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "TranslateViewController.h"
+#import "UIViewController+CreateSelf.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic, strong) IBOutlet UITableView *demoList;
@@ -49,7 +50,6 @@
         default:
             break;
     }
-
 }
 
 - (void)didReceiveMemoryWarning {
