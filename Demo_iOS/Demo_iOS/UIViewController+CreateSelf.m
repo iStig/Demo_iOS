@@ -10,11 +10,9 @@
 
 @implementation UIViewController (CreateSelf)
 + (instancetype)createSelf {
-//    return [[[self class] alloc] init];
     return [[self alloc] init];
 }
 + (instancetype)createSelfWithXib {
-//   return [[[self class] alloc] initWithNibName:NSStringFromClass(self) bundle:nil];
     return [[self alloc] initWithNibName:NSStringFromClass(self) bundle:nil];
 }
 

@@ -7,20 +7,24 @@
 //
 
 #import "TranslateViewController.h"
+#import "FoldingView.h"
+
 @interface TranslateViewController ()
 @property (nonatomic, strong) UIImageView *imageFront;
 @property (nonatomic, strong) UIImageView *imageMiddle;
 @property (nonatomic, strong) UIImageView *imageEnd;
+@property(nonatomic) FoldingView *foldView;
 @end
 @implementation TranslateViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUpRotateImage];
+//    [self setUpFlowImage];
 }
 
 - (void)setUpRotateImage {
     
-    CGFloat padding = 200 + 44;
+    CGFloat padding = 40 + 44;
     CGFloat height = 310;
     CGFloat width = 210;
     
@@ -52,6 +56,18 @@
 //        [img shadower];
 //        [img shadowerWithUIBezierPath];
     }
+}
+
+- (void)setUpFlowImage {
+    CGFloat padding = 30.f;
+    CGFloat width = CGRectGetWidth(self.view.bounds) - padding * 2;
+    CGRect frame = CGRectMake(0, CGRectGetMaxX(self.imageFront.frame) + 20, width, width);
+    
+    self.foldView = [[FoldingView alloc] initWithFrame:frame
+                                                 image:[UIImage imageNamed:@"boat"]];
+    self.foldView.center = self.view.center;
+    [self.view addSubview:self.foldView];
+
 }
 
 @end
