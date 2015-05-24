@@ -16,7 +16,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUpRotateImage];
-    
 }
 
 - (void)setUpRotateImage {
@@ -33,6 +32,7 @@
     NSArray *arr = @[self.imageFront,self.imageMiddle,self.imageEnd];
     CATransform3D perspective = CATransform3DIdentity;
     perspective.m34 = -2.5/2000;
+
     //BUG FIX:吓尿了  NSUInteger  i = 0 改成 NSInteger  i = 0 才正常，什么问题没分析出来啊
     for (NSInteger i = 0; i < arr.count; i++) {
         UIImageView *img = arr[i];
@@ -41,13 +41,17 @@
         
         img.layer.zPosition = (2-i)*100;
         img.layer.transform = perspective;
-        img.layer.transform = CATransform3DTranslate(img.layer.transform, 0, i*-5, 0);
-        img.layer.transform = CATransform3DScale(img.layer.transform, 1-0.1*i, 1, 1);
-        img.layer.transform = CATransform3DRotate(img.layer.transform, -1*M_PI/180, 1, 0, 0);
-        img.layer.opacity = 1-0.1*i;
-        img.layer.cornerRadius = 5;
+        img.layer.transform = CATransform3DTranslate(img.layer.transform, 0, i*-5, 0);//改变y轴
+        img.layer.transform = CATransform3DScale(img.layer.transform, 1-0.1*i, 1, 1);//不改变y和z轴，只改变x轴尺寸
+        img.layer.transform = CATransform3DRotate(img.layer.transform, -1*M_PI/180, 1, 0, 0);//改变x轴转角,角度转换成弧度：角度 * M_PI / 180 这里只改变了一个单位
+        img.layer.opacity = 1-0.1*i;//改变透明度
+        img.layer.cornerRadius = 5;//改变圆角弧度
         img.layer.masksToBounds = YES;
+//        img.layer.borderWidth = 5;
+//        img.layer.borderColor = [UIColor redColor].CGColor;
+//        [img shadower];
+//        [img shadowerWithUIBezierPath];
     }
-    
 }
+
 @end

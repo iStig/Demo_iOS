@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIImageView+shadower.h"
 
 @interface BaseViewController : UIViewController
 

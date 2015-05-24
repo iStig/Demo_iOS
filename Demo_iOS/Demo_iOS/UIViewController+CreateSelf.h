@@ -10,4 +10,7 @@
 
 @interface UIViewController (CreateSelf)
 + (instancetype)createSelf;
++ (instancetype)createSelfWithXib;
++ (instancetype)createSelfWithStoryboard;
+
 @end

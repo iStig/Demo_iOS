@@ -42,7 +42,7 @@
     
     switch (indexPath.row) {
         case VC_Type_Translate:{
-            demo = [[TranslateViewController alloc] init];
+            demo = [TranslateViewController createSelf];
             demo.title = self.demos[indexPath.row];
             [self.navigationController pushViewController:demo animated:YES];
         }
