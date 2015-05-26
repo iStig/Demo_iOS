@@ -15,6 +15,9 @@
 		62052D681B1479F900F2BB9E /* TranslateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62052D641B1479F900F2BB9E /* TranslateViewController.m */; };
 		62052D691B1479F900F2BB9E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62052D661B1479F900F2BB9E /* ViewController.m */; };
 		62052D6C1B147A0100F2BB9E /* FoldingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 62052D6B1B147A0100F2BB9E /* FoldingView.m */; };
+		62052D6F1B147A6800F2BB9E /* UIImage+Decompression.m in Sources */ = {isa = PBXBuildFile; fileRef = 62052D6E1B147A6800F2BB9E /* UIImage+Decompression.m */; };
+		62052D721B147AB200F2BB9E /* NSCalendar+FSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 62052D711B147AB200F2BB9E /* NSCalendar+FSExtension.m */; };
+		62052D751B147ABA00F2BB9E /* NSString+parse.m in Sources */ = {isa = PBXBuildFile; fileRef = 62052D741B147ABA00F2BB9E /* NSString+parse.m */; };
 		6282DDFA1B0E0B72005CF07D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6282DDF91B0E0B72005CF07D /* main.m */; };
 		6282DDFD1B0E0B72005CF07D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6282DDFC1B0E0B72005CF07D /* AppDelegate.m */; };
 		6282DE031B0E0B72005CF07D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6282DE011B0E0B72005CF07D /* Main.storyboard */; };
@@ -53,6 +56,12 @@
 		62052D661B1479F900F2BB9E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		62052D6A1B147A0100F2BB9E /* FoldingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoldingView.h; sourceTree = "<group>"; };
 		62052D6B1B147A0100F2BB9E /* FoldingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoldingView.m; sourceTree = "<group>"; };
+		62052D6D1B147A6800F2BB9E /* UIImage+Decompression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Decompression.h"; sourceTree = "<group>"; };
+		62052D6E1B147A6800F2BB9E /* UIImage+Decompression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Decompression.m"; sourceTree = "<group>"; };
+		62052D701B147AB200F2BB9E /* NSCalendar+FSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+FSExtension.h"; sourceTree = "<group>"; };
+		62052D711B147AB200F2BB9E /* NSCalendar+FSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+FSExtension.m"; sourceTree = "<group>"; };
+		62052D731B147ABA00F2BB9E /* NSString+parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+parse.h"; sourceTree = "<group>"; };
+		62052D741B147ABA00F2BB9E /* NSString+parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+parse.m"; sourceTree = "<group>"; };
 		6282DDF41B0E0B72005CF07D /* Demo_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6282DDF81B0E0B72005CF07D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6282DDF91B0E0B72005CF07D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -98,6 +107,12 @@
 		62052D4F1B14797F00F2BB9E /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				62052D731B147ABA00F2BB9E /* NSString+parse.h */,
+				62052D741B147ABA00F2BB9E /* NSString+parse.m */,
+				62052D701B147AB200F2BB9E /* NSCalendar+FSExtension.h */,
+				62052D711B147AB200F2BB9E /* NSCalendar+FSExtension.m */,
+				62052D6D1B147A6800F2BB9E /* UIImage+Decompression.h */,
+				62052D6E1B147A6800F2BB9E /* UIImage+Decompression.m */,
 				62052D581B1479DB00F2BB9E /* UIImage+Blur.h */,
 				62052D591B1479DB00F2BB9E /* UIImage+Blur.m */,
 				62052D5A1B1479DB00F2BB9E /* UIImageView+shadower.h */,
@@ -375,10 +390,13 @@
 				62052D681B1479F900F2BB9E /* TranslateViewController.m in Sources */,
 				62052D671B1479F900F2BB9E /* CAShapeLayerViewController.m in Sources */,
 				62052D5F1B1479DB00F2BB9E /* UIImageView+shadower.m in Sources */,
+				62052D751B147ABA00F2BB9E /* NSString+parse.m in Sources */,
 				62052D601B1479DB00F2BB9E /* UIViewController+CreateSelf.m in Sources */,
+				62052D721B147AB200F2BB9E /* NSCalendar+FSExtension.m in Sources */,
 				62052D571B1479CC00F2BB9E /* BaseViewController.m in Sources */,
 				62052D5E1B1479DB00F2BB9E /* UIImage+Blur.m in Sources */,
 				6282DDFA1B0E0B72005CF07D /* main.m in Sources */,
+				62052D6F1B147A6800F2BB9E /* UIImage+Decompression.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
