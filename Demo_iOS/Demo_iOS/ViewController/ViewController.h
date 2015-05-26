@@ -10,6 +10,7 @@
 #import "BaseViewController.h"
 typedef NS_ENUM(NSUInteger, VC_Type) {
     VC_Type_Translate = 0,
+    VC_Type_ShapeLayer,
 };
 
 @interface ViewController : BaseViewController

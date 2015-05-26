@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUpRotateImage];
-//    [self setUpFlowImage];
+    [self setUpFlowImage];
 }
 
 - (void)setUpRotateImage {
@@ -32,11 +32,11 @@
     self.imageFront = [[UIImageView alloc] initWithFrame:CGRectMake((self.view.frame.size.width- width)/2,padding, width , height)];
     self.imageMiddle = [[UIImageView alloc] initWithFrame:CGRectMake((self.view.frame.size.width- width)/2,padding , width , height)];
     self.imageEnd = [[UIImageView alloc] initWithFrame:CGRectMake((self.view.frame.size.width- width)/2,padding , width , height)];
-
+    
     NSArray *arr = @[self.imageFront,self.imageMiddle,self.imageEnd];
     CATransform3D perspective = CATransform3DIdentity;
     perspective.m34 = -2.5/2000;
-
+    
     //BUG FIX:吓尿了  NSUInteger  i = 0 改成 NSInteger  i = 0 才正常，什么问题没分析出来啊
     for (NSInteger i = 0; i < arr.count; i++) {
         UIImageView *img = arr[i];
@@ -51,23 +51,19 @@
         img.layer.opacity = 1-0.1*i;//改变透明度
         img.layer.cornerRadius = 5;//改变圆角弧度
         img.layer.masksToBounds = YES;
-//        img.layer.borderWidth = 5;
-//        img.layer.borderColor = [UIColor redColor].CGColor;
-//        [img shadower];
-//        [img shadowerWithUIBezierPath];
+        //        img.layer.borderWidth = 5;
+        //        img.layer.borderColor = [UIColor redColor].CGColor;
+        //        [img shadower];
+        //        [img shadowerWithUIBezierPath];
     }
 }
 
 - (void)setUpFlowImage {
-    CGFloat padding = 30.f;
-    CGFloat width = CGRectGetWidth(self.view.bounds) - padding * 2;
-    CGRect frame = CGRectMake(0, CGRectGetMaxX(self.imageFront.frame) + 20, width, width);
-    
+    CGRect frame = CGRectMake(0, 0, 320, 320*3/4);
     self.foldView = [[FoldingView alloc] initWithFrame:frame
                                                  image:[UIImage imageNamed:@"boat"]];
-    self.foldView.center = self.view.center;
+    self.foldView.center = CGPointMake(self.view.center.x, CGRectGetMaxY(self.imageFront.frame) + frame.size.height/2 + 10);
     [self.view addSubview:self.foldView];
-
 }
 
 @end

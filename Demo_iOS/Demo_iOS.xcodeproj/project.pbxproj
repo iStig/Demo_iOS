@@ -7,19 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6241790F1B0EDACF0089832E /* UIViewController+CreateSelf.m in Sources */ = {isa = PBXBuildFile; fileRef = 6241790E1B0EDACF0089832E /* UIViewController+CreateSelf.m */; };
-		62755F5A1B11F8DC0026653E /* UIImageView+shadower.m in Sources */ = {isa = PBXBuildFile; fileRef = 62755F591B11F8DC0026653E /* UIImageView+shadower.m */; };
-		62755F5F1B1203BA0026653E /* FoldingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 62755F5C1B1203BA0026653E /* FoldingView.m */; };
-		62755F601B1203BA0026653E /* UIImage+Blur.m in Sources */ = {isa = PBXBuildFile; fileRef = 62755F5E1B1203BA0026653E /* UIImage+Blur.m */; };
+		62052D571B1479CC00F2BB9E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62052D561B1479CC00F2BB9E /* BaseViewController.m */; };
+		62052D5E1B1479DB00F2BB9E /* UIImage+Blur.m in Sources */ = {isa = PBXBuildFile; fileRef = 62052D591B1479DB00F2BB9E /* UIImage+Blur.m */; };
+		62052D5F1B1479DB00F2BB9E /* UIImageView+shadower.m in Sources */ = {isa = PBXBuildFile; fileRef = 62052D5B1B1479DB00F2BB9E /* UIImageView+shadower.m */; };
+		62052D601B1479DB00F2BB9E /* UIViewController+CreateSelf.m in Sources */ = {isa = PBXBuildFile; fileRef = 62052D5D1B1479DB00F2BB9E /* UIViewController+CreateSelf.m */; };
+		62052D671B1479F900F2BB9E /* CAShapeLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62052D621B1479F900F2BB9E /* CAShapeLayerViewController.m */; };
+		62052D681B1479F900F2BB9E /* TranslateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62052D641B1479F900F2BB9E /* TranslateViewController.m */; };
+		62052D691B1479F900F2BB9E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62052D661B1479F900F2BB9E /* ViewController.m */; };
+		62052D6C1B147A0100F2BB9E /* FoldingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 62052D6B1B147A0100F2BB9E /* FoldingView.m */; };
 		6282DDFA1B0E0B72005CF07D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6282DDF91B0E0B72005CF07D /* main.m */; };
 		6282DDFD1B0E0B72005CF07D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6282DDFC1B0E0B72005CF07D /* AppDelegate.m */; };
-		6282DE001B0E0B72005CF07D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6282DDFF1B0E0B72005CF07D /* ViewController.m */; };
 		6282DE031B0E0B72005CF07D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6282DE011B0E0B72005CF07D /* Main.storyboard */; };
 		6282DE051B0E0B72005CF07D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6282DE041B0E0B72005CF07D /* Images.xcassets */; };
 		6282DE081B0E0B72005CF07D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6282DE061B0E0B72005CF07D /* LaunchScreen.xib */; };
 		6282DE141B0E0B72005CF07D /* Demo_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6282DE131B0E0B72005CF07D /* Demo_iOSTests.m */; };
-		6282DE251B0E1D6E005CF07D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6282DE241B0E1D6E005CF07D /* BaseViewController.m */; };
-		6282DE281B0E1EE1005CF07D /* TranslateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6282DE271B0E1EE1005CF07D /* TranslateViewController.m */; };
 		A742C5A2AE64BD3AC5D78A91 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE472085D23CDB80D53B9CDA /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -36,31 +37,33 @@
 /* Begin PBXFileReference section */
 		291A82DF31F22C9EE09313EE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		55B0664897BE2FFC28213901 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		6241790D1B0EDACF0089832E /* UIViewController+CreateSelf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CreateSelf.h"; sourceTree = "<group>"; };
-		6241790E1B0EDACF0089832E /* UIViewController+CreateSelf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CreateSelf.m"; sourceTree = "<group>"; };
-		62755F581B11F8DC0026653E /* UIImageView+shadower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+shadower.h"; sourceTree = "<group>"; };
-		62755F591B11F8DC0026653E /* UIImageView+shadower.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+shadower.m"; sourceTree = "<group>"; };
-		62755F5B1B1203BA0026653E /* FoldingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoldingView.h; sourceTree = "<group>"; };
-		62755F5C1B1203BA0026653E /* FoldingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoldingView.m; sourceTree = "<group>"; };
-		62755F5D1B1203BA0026653E /* UIImage+Blur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Blur.h"; sourceTree = "<group>"; };
-		62755F5E1B1203BA0026653E /* UIImage+Blur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Blur.m"; sourceTree = "<group>"; };
+		62052D551B1479CC00F2BB9E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		62052D561B1479CC00F2BB9E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		62052D581B1479DB00F2BB9E /* UIImage+Blur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Blur.h"; sourceTree = "<group>"; };
+		62052D591B1479DB00F2BB9E /* UIImage+Blur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Blur.m"; sourceTree = "<group>"; };
+		62052D5A1B1479DB00F2BB9E /* UIImageView+shadower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+shadower.h"; sourceTree = "<group>"; };
+		62052D5B1B1479DB00F2BB9E /* UIImageView+shadower.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+shadower.m"; sourceTree = "<group>"; };
+		62052D5C1B1479DB00F2BB9E /* UIViewController+CreateSelf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CreateSelf.h"; sourceTree = "<group>"; };
+		62052D5D1B1479DB00F2BB9E /* UIViewController+CreateSelf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CreateSelf.m"; sourceTree = "<group>"; };
+		62052D611B1479F900F2BB9E /* CAShapeLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAShapeLayerViewController.h; sourceTree = "<group>"; };
+		62052D621B1479F900F2BB9E /* CAShapeLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAShapeLayerViewController.m; sourceTree = "<group>"; };
+		62052D631B1479F900F2BB9E /* TranslateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TranslateViewController.h; sourceTree = "<group>"; };
+		62052D641B1479F900F2BB9E /* TranslateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslateViewController.m; sourceTree = "<group>"; };
+		62052D651B1479F900F2BB9E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		62052D661B1479F900F2BB9E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		62052D6A1B147A0100F2BB9E /* FoldingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoldingView.h; sourceTree = "<group>"; };
+		62052D6B1B147A0100F2BB9E /* FoldingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoldingView.m; sourceTree = "<group>"; };
 		6282DDF41B0E0B72005CF07D /* Demo_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6282DDF81B0E0B72005CF07D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6282DDF91B0E0B72005CF07D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6282DDFB1B0E0B72005CF07D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6282DDFC1B0E0B72005CF07D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6282DDFE1B0E0B72005CF07D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6282DDFF1B0E0B72005CF07D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6282DE021B0E0B72005CF07D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6282DE041B0E0B72005CF07D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6282DE071B0E0B72005CF07D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6282DE0D1B0E0B72005CF07D /* Demo_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Demo_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6282DE121B0E0B72005CF07D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6282DE131B0E0B72005CF07D /* Demo_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo_iOSTests.m; sourceTree = "<group>"; };
-		6282DE231B0E1D6E005CF07D /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		6282DE241B0E1D6E005CF07D /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		6282DE261B0E1EE1005CF07D /* TranslateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TranslateViewController.h; sourceTree = "<group>"; };
-		6282DE271B0E1EE1005CF07D /* TranslateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslateViewController.m; sourceTree = "<group>"; };
 		BE472085D23CDB80D53B9CDA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -83,6 +86,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62052D4E1B14797F00F2BB9E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				62052D551B1479CC00F2BB9E /* BaseViewController.h */,
+				62052D561B1479CC00F2BB9E /* BaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		62052D4F1B14797F00F2BB9E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				62052D581B1479DB00F2BB9E /* UIImage+Blur.h */,
+				62052D591B1479DB00F2BB9E /* UIImage+Blur.m */,
+				62052D5A1B1479DB00F2BB9E /* UIImageView+shadower.h */,
+				62052D5B1B1479DB00F2BB9E /* UIImageView+shadower.m */,
+				62052D5C1B1479DB00F2BB9E /* UIViewController+CreateSelf.h */,
+				62052D5D1B1479DB00F2BB9E /* UIViewController+CreateSelf.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		62052D501B14797F00F2BB9E /* Exention */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Exention;
+			sourceTree = "<group>";
+		};
+		62052D511B14797F00F2BB9E /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		62052D521B14797F00F2BB9E /* Until */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Until;
+			sourceTree = "<group>";
+		};
+		62052D531B14797F00F2BB9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62052D6A1B147A0100F2BB9E /* FoldingView.h */,
+				62052D6B1B147A0100F2BB9E /* FoldingView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		62052D541B14797F00F2BB9E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				62052D611B1479F900F2BB9E /* CAShapeLayerViewController.h */,
+				62052D621B1479F900F2BB9E /* CAShapeLayerViewController.m */,
+				62052D631B1479F900F2BB9E /* TranslateViewController.h */,
+				62052D641B1479F900F2BB9E /* TranslateViewController.m */,
+				62052D651B1479F900F2BB9E /* ViewController.h */,
+				62052D661B1479F900F2BB9E /* ViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		6282DDEB1B0E0B72005CF07D = {
 			isa = PBXGroup;
 			children = (
@@ -106,22 +174,15 @@
 		6282DDF61B0E0B72005CF07D /* Demo_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				62755F5B1B1203BA0026653E /* FoldingView.h */,
-				62755F5C1B1203BA0026653E /* FoldingView.m */,
-				62755F5D1B1203BA0026653E /* UIImage+Blur.h */,
-				62755F5E1B1203BA0026653E /* UIImage+Blur.m */,
+				62052D4E1B14797F00F2BB9E /* Base */,
+				62052D4F1B14797F00F2BB9E /* Category */,
+				62052D501B14797F00F2BB9E /* Exention */,
+				62052D511B14797F00F2BB9E /* ThirdParty */,
+				62052D521B14797F00F2BB9E /* Until */,
+				62052D531B14797F00F2BB9E /* View */,
+				62052D541B14797F00F2BB9E /* ViewController */,
 				6282DDFB1B0E0B72005CF07D /* AppDelegate.h */,
 				6282DDFC1B0E0B72005CF07D /* AppDelegate.m */,
-				6241790D1B0EDACF0089832E /* UIViewController+CreateSelf.h */,
-				6241790E1B0EDACF0089832E /* UIViewController+CreateSelf.m */,
-				62755F581B11F8DC0026653E /* UIImageView+shadower.h */,
-				62755F591B11F8DC0026653E /* UIImageView+shadower.m */,
-				6282DE231B0E1D6E005CF07D /* BaseViewController.h */,
-				6282DE241B0E1D6E005CF07D /* BaseViewController.m */,
-				6282DDFE1B0E0B72005CF07D /* ViewController.h */,
-				6282DDFF1B0E0B72005CF07D /* ViewController.m */,
-				6282DE261B0E1EE1005CF07D /* TranslateViewController.h */,
-				6282DE271B0E1EE1005CF07D /* TranslateViewController.m */,
 				6282DE011B0E0B72005CF07D /* Main.storyboard */,
 				6282DE041B0E0B72005CF07D /* Images.xcassets */,
 				6282DE061B0E0B72005CF07D /* LaunchScreen.xib */,
@@ -308,14 +369,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62755F601B1203BA0026653E /* UIImage+Blur.m in Sources */,
-				6282DE001B0E0B72005CF07D /* ViewController.m in Sources */,
-				6282DE281B0E1EE1005CF07D /* TranslateViewController.m in Sources */,
-				6241790F1B0EDACF0089832E /* UIViewController+CreateSelf.m in Sources */,
-				62755F5A1B11F8DC0026653E /* UIImageView+shadower.m in Sources */,
-				6282DE251B0E1D6E005CF07D /* BaseViewController.m in Sources */,
+				62052D691B1479F900F2BB9E /* ViewController.m in Sources */,
 				6282DDFD1B0E0B72005CF07D /* AppDelegate.m in Sources */,
-				62755F5F1B1203BA0026653E /* FoldingView.m in Sources */,
+				62052D6C1B147A0100F2BB9E /* FoldingView.m in Sources */,
+				62052D681B1479F900F2BB9E /* TranslateViewController.m in Sources */,
+				62052D671B1479F900F2BB9E /* CAShapeLayerViewController.m in Sources */,
+				62052D5F1B1479DB00F2BB9E /* UIImageView+shadower.m in Sources */,
+				62052D601B1479DB00F2BB9E /* UIViewController+CreateSelf.m in Sources */,
+				62052D571B1479CC00F2BB9E /* BaseViewController.m in Sources */,
+				62052D5E1B1479DB00F2BB9E /* UIImage+Blur.m in Sources */,
 				6282DDFA1B0E0B72005CF07D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,7 +506,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Demo_iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -456,7 +518,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Demo_iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
