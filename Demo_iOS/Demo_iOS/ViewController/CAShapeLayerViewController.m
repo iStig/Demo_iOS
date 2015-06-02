@@ -7,6 +7,8 @@
 //
 
 #import "CAShapeLayerViewController.h"
+#import "ColorfulProgress.h"
+
 @interface CAShapeLayerViewController()
 @property (strong,   nonatomic) CAShapeLayer *indefiniteAnimatedLayer;
 @property (assign,   nonatomic) CGFloat strokeThickness;
@@ -20,6 +22,14 @@
     [self setupEventLayer];
     [self setupIndefiniteAnimatedLayer];
     [self drawRect];
+    [self drawColorfulProgress];
+}
+
+- (void)drawColorfulProgress {
+    ColorfulProgress *progress = [[ColorfulProgress alloc] initWithFrame:CGRectMake(30, 180, 400, 5) color:nil];
+    progress.progress = 1;
+    [self.view addSubview:progress];
+
 }
 
 - (void)setupEventLayer {

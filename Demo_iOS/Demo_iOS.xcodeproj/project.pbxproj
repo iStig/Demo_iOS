@@ -18,12 +18,16 @@
 		62052D6F1B147A6800F2BB9E /* UIImage+Decompression.m in Sources */ = {isa = PBXBuildFile; fileRef = 62052D6E1B147A6800F2BB9E /* UIImage+Decompression.m */; };
 		62052D721B147AB200F2BB9E /* NSCalendar+FSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 62052D711B147AB200F2BB9E /* NSCalendar+FSExtension.m */; };
 		62052D751B147ABA00F2BB9E /* NSString+parse.m in Sources */ = {isa = PBXBuildFile; fileRef = 62052D741B147ABA00F2BB9E /* NSString+parse.m */; };
+		62700F121B1D8A5C004F9140 /* MapPloylineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62700F111B1D8A5C004F9140 /* MapPloylineViewController.m */; };
 		6282DDFA1B0E0B72005CF07D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6282DDF91B0E0B72005CF07D /* main.m */; };
 		6282DDFD1B0E0B72005CF07D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6282DDFC1B0E0B72005CF07D /* AppDelegate.m */; };
 		6282DE031B0E0B72005CF07D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6282DE011B0E0B72005CF07D /* Main.storyboard */; };
 		6282DE051B0E0B72005CF07D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6282DE041B0E0B72005CF07D /* Images.xcassets */; };
 		6282DE081B0E0B72005CF07D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6282DE061B0E0B72005CF07D /* LaunchScreen.xib */; };
 		6282DE141B0E0B72005CF07D /* Demo_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6282DE131B0E0B72005CF07D /* Demo_iOSTests.m */; };
+		62C1A7CA1B15AB6600700898 /* SimpleAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C1A7C91B15AB6600700898 /* SimpleAudioPlayer.m */; };
+		62C1A7CC1B15B22400700898 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 62C1A7CB1B15B22400700898 /* README.md */; };
+		62C1A7CF1B16B9D400700898 /* ColorfulProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C1A7CE1B16B9D400700898 /* ColorfulProgress.m */; };
 		A742C5A2AE64BD3AC5D78A91 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE472085D23CDB80D53B9CDA /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +66,8 @@
 		62052D711B147AB200F2BB9E /* NSCalendar+FSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+FSExtension.m"; sourceTree = "<group>"; };
 		62052D731B147ABA00F2BB9E /* NSString+parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+parse.h"; sourceTree = "<group>"; };
 		62052D741B147ABA00F2BB9E /* NSString+parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+parse.m"; sourceTree = "<group>"; };
+		62700F101B1D8A5C004F9140 /* MapPloylineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPloylineViewController.h; sourceTree = "<group>"; };
+		62700F111B1D8A5C004F9140 /* MapPloylineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPloylineViewController.m; sourceTree = "<group>"; };
 		6282DDF41B0E0B72005CF07D /* Demo_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6282DDF81B0E0B72005CF07D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6282DDF91B0E0B72005CF07D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -73,6 +79,11 @@
 		6282DE0D1B0E0B72005CF07D /* Demo_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Demo_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6282DE121B0E0B72005CF07D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6282DE131B0E0B72005CF07D /* Demo_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo_iOSTests.m; sourceTree = "<group>"; };
+		62C1A7C81B15AB6600700898 /* SimpleAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAudioPlayer.h; sourceTree = "<group>"; };
+		62C1A7C91B15AB6600700898 /* SimpleAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleAudioPlayer.m; sourceTree = "<group>"; };
+		62C1A7CB1B15B22400700898 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		62C1A7CD1B16B9D400700898 /* ColorfulProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorfulProgress.h; sourceTree = "<group>"; };
+		62C1A7CE1B16B9D400700898 /* ColorfulProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorfulProgress.m; sourceTree = "<group>"; };
 		BE472085D23CDB80D53B9CDA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -133,6 +144,9 @@
 		62052D511B14797F00F2BB9E /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				62C1A7CB1B15B22400700898 /* README.md */,
+				62C1A7C81B15AB6600700898 /* SimpleAudioPlayer.h */,
+				62C1A7C91B15AB6600700898 /* SimpleAudioPlayer.m */,
 			);
 			path = ThirdParty;
 			sourceTree = "<group>";
@@ -149,6 +163,8 @@
 			children = (
 				62052D6A1B147A0100F2BB9E /* FoldingView.h */,
 				62052D6B1B147A0100F2BB9E /* FoldingView.m */,
+				62C1A7CD1B16B9D400700898 /* ColorfulProgress.h */,
+				62C1A7CE1B16B9D400700898 /* ColorfulProgress.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,6 +178,8 @@
 				62052D641B1479F900F2BB9E /* TranslateViewController.m */,
 				62052D651B1479F900F2BB9E /* ViewController.h */,
 				62052D661B1479F900F2BB9E /* ViewController.m */,
+				62700F101B1D8A5C004F9140 /* MapPloylineViewController.h */,
+				62700F111B1D8A5C004F9140 /* MapPloylineViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -387,15 +405,19 @@
 				62052D691B1479F900F2BB9E /* ViewController.m in Sources */,
 				6282DDFD1B0E0B72005CF07D /* AppDelegate.m in Sources */,
 				62052D6C1B147A0100F2BB9E /* FoldingView.m in Sources */,
+				62C1A7CA1B15AB6600700898 /* SimpleAudioPlayer.m in Sources */,
 				62052D681B1479F900F2BB9E /* TranslateViewController.m in Sources */,
 				62052D671B1479F900F2BB9E /* CAShapeLayerViewController.m in Sources */,
 				62052D5F1B1479DB00F2BB9E /* UIImageView+shadower.m in Sources */,
 				62052D751B147ABA00F2BB9E /* NSString+parse.m in Sources */,
+				62C1A7CF1B16B9D400700898 /* ColorfulProgress.m in Sources */,
 				62052D601B1479DB00F2BB9E /* UIViewController+CreateSelf.m in Sources */,
 				62052D721B147AB200F2BB9E /* NSCalendar+FSExtension.m in Sources */,
 				62052D571B1479CC00F2BB9E /* BaseViewController.m in Sources */,
 				62052D5E1B1479DB00F2BB9E /* UIImage+Blur.m in Sources */,
+				62C1A7CC1B15B22400700898 /* README.md in Sources */,
 				6282DDFA1B0E0B72005CF07D /* main.m in Sources */,
+				62700F121B1D8A5C004F9140 /* MapPloylineViewController.m in Sources */,
 				62052D6F1B147A6800F2BB9E /* UIImage+Decompression.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

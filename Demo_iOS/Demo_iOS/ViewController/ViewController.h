@@ -11,6 +11,7 @@
 typedef NS_ENUM(NSUInteger, VC_Type) {
     VC_Type_Translate = 0,
     VC_Type_ShapeLayer,
+    VC_Type_MapPloyline,
 };
 
 @interface ViewController : BaseViewController
