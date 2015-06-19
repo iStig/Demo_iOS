@@ -19,6 +19,8 @@
 		62052D721B147AB200F2BB9E /* NSCalendar+FSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 62052D711B147AB200F2BB9E /* NSCalendar+FSExtension.m */; };
 		62052D751B147ABA00F2BB9E /* NSString+parse.m in Sources */ = {isa = PBXBuildFile; fileRef = 62052D741B147ABA00F2BB9E /* NSString+parse.m */; };
 		62700F121B1D8A5C004F9140 /* MapPloylineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62700F111B1D8A5C004F9140 /* MapPloylineViewController.m */; };
+		62700F1A1B1D8D81004F9140 /* EntranceToGoliathRoute.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62700F191B1D8D81004F9140 /* EntranceToGoliathRoute.plist */; };
+		62700F1D1B1D9BE1004F9140 /* SMAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 62700F1C1B1D9BE1004F9140 /* SMAnnotation.m */; };
 		6282DDFA1B0E0B72005CF07D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6282DDF91B0E0B72005CF07D /* main.m */; };
 		6282DDFD1B0E0B72005CF07D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6282DDFC1B0E0B72005CF07D /* AppDelegate.m */; };
 		6282DE031B0E0B72005CF07D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6282DE011B0E0B72005CF07D /* Main.storyboard */; };
@@ -68,6 +70,9 @@
 		62052D741B147ABA00F2BB9E /* NSString+parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+parse.m"; sourceTree = "<group>"; };
 		62700F101B1D8A5C004F9140 /* MapPloylineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPloylineViewController.h; sourceTree = "<group>"; };
 		62700F111B1D8A5C004F9140 /* MapPloylineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPloylineViewController.m; sourceTree = "<group>"; };
+		62700F191B1D8D81004F9140 /* EntranceToGoliathRoute.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EntranceToGoliathRoute.plist; sourceTree = "<group>"; };
+		62700F1B1B1D9BE1004F9140 /* SMAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMAnnotation.h; sourceTree = "<group>"; };
+		62700F1C1B1D9BE1004F9140 /* SMAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMAnnotation.m; sourceTree = "<group>"; };
 		6282DDF41B0E0B72005CF07D /* Demo_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6282DDF81B0E0B72005CF07D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6282DDF91B0E0B72005CF07D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -137,6 +142,7 @@
 		62052D501B14797F00F2BB9E /* Exention */ = {
 			isa = PBXGroup;
 			children = (
+				62700F131B1D8C2B004F9140 /* MapPloyline */,
 			);
 			path = Exention;
 			sourceTree = "<group>";
@@ -184,6 +190,23 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		62700F131B1D8C2B004F9140 /* MapPloyline */ = {
+			isa = PBXGroup;
+			children = (
+				62700F1B1B1D9BE1004F9140 /* SMAnnotation.h */,
+				62700F1C1B1D9BE1004F9140 /* SMAnnotation.m */,
+			);
+			path = MapPloyline;
+			sourceTree = "<group>";
+		};
+		62700F181B1D8D81004F9140 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				62700F191B1D8D81004F9140 /* EntranceToGoliathRoute.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		6282DDEB1B0E0B72005CF07D = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +230,7 @@
 		6282DDF61B0E0B72005CF07D /* Demo_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				62700F181B1D8D81004F9140 /* Resource */,
 				62052D4E1B14797F00F2BB9E /* Base */,
 				62052D4F1B14797F00F2BB9E /* Category */,
 				62052D501B14797F00F2BB9E /* Exention */,
@@ -349,6 +373,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62700F1A1B1D8D81004F9140 /* EntranceToGoliathRoute.plist in Resources */,
 				6282DE031B0E0B72005CF07D /* Main.storyboard in Resources */,
 				6282DE081B0E0B72005CF07D /* LaunchScreen.xib in Resources */,
 				6282DE051B0E0B72005CF07D /* Images.xcassets in Resources */,
@@ -410,6 +435,7 @@
 				62052D671B1479F900F2BB9E /* CAShapeLayerViewController.m in Sources */,
 				62052D5F1B1479DB00F2BB9E /* UIImageView+shadower.m in Sources */,
 				62052D751B147ABA00F2BB9E /* NSString+parse.m in Sources */,
+				62700F1D1B1D9BE1004F9140 /* SMAnnotation.m in Sources */,
 				62C1A7CF1B16B9D400700898 /* ColorfulProgress.m in Sources */,
 				62052D601B1479DB00F2BB9E /* UIViewController+CreateSelf.m in Sources */,
 				62052D721B147AB200F2BB9E /* NSCalendar+FSExtension.m in Sources */,

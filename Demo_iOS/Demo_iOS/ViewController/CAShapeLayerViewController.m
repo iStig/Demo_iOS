@@ -14,11 +14,19 @@
 @property (assign,   nonatomic) CGFloat strokeThickness;
 @property (assign,   nonatomic) CGFloat radius;
 @property (strong,   nonatomic) CAShapeLayer *eventLayer;
+@property (strong,   nonatomic) UIImageView *imgView;
+@property (strong,   nonatomic) UIView *rotateView;
+@property (nonatomic)  CGMutablePathRef  path;
 @end
 @implementation CAShapeLayerViewController
+@synthesize path;
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor greenColor];
+//    [self setupKeyAnimation];
+    
+    [self setupRotateView];
+    [self setupKeyAnimation];
     [self setupEventLayer];
     [self setupIndefiniteAnimatedLayer];
     [self drawRect];
@@ -31,6 +39,108 @@
     [self.view addSubview:progress];
 
 }
+
+- (void)setupRotateView {
+    _rotateView = [[UIView alloc] initWithFrame:CGRectMake(50, 400, 100, 100)];
+    _rotateView.backgroundColor = [UIColor blueColor];
+//    _rotateView.layer.anchorPoint = CGPointMake(1, 1);
+//    _rotateView.layer.position = CGPointMake(120, 120);
+//    _rotateView.center = self.view.center;
+    NSLog(@"POSITION.X:%f  POSITION.Y:%f",_rotateView.layer.position.x,_rotateView.layer.position.y);
+    NSLog(@"anchorPoint.X:%f  anchorPoint.Y:%f",_rotateView.layer.anchorPoint.x,_rotateView.layer.anchorPoint.y);
+    [self.view addSubview:_rotateView];
+//    [self setAnchorPoint:CGPointMake(1, 1) forView:_rotateView];
+}
+
+
+- (void) setAnchorPoint:(CGPoint)anchorpoint forView:(UIView *)view{
+    CGRect oldFrame = view.frame;
+    view.layer.anchorPoint = anchorpoint;
+    view.frame = oldFrame;
+}
+
+//接着初始化路径
+-(void)initPath{
+    
+    //设置路劲
+     path = CGPathCreateMutable();
+    //线
+    CAShapeLayer *line =  [CAShapeLayer layer];
+    //宽度
+    line.lineWidth = 2.0f ;
+    //线颜色
+    line.strokeColor = [UIColor orangeColor].CGColor;
+    //里面的填充色
+    line.fillColor = [UIColor purpleColor].CGColor;
+    //添加椭圆
+    CGPathAddEllipseInRect(path, NULL, CGRectMake(50, 100, 200, 100));//椭圆路径，关键步骤。
+    //线的路劲
+    line.path = path;
+//    CGPathRelease(path);
+    [self.view.layer addSublayer:line];
+}
+
+- (void)setupKeyAnimation {
+    
+    [self initPath];
+    
+    _imgView = [[UIImageView alloc] initWithFrame:CGRectMake(100, 100, 20, 20)];
+    _imgView.image = [UIImage imageNamed:@"boll"];
+    _imgView.opaque = NO;
+    [self.view addSubview:_imgView];
+    
+    [self startMoving];
+
+}
+
+//开始移动
+-(void)startMoving{
+    
+    
+    // [self.layer addAnimation:[self animation] forKey:@"position"];//圆周运动
+    [_imgView.layer addAnimation:[self animation] forKey:@"position"];
+    //在layer层添加
+//    [self.view.layer addAnimation:[self fadeInOutAnimation] forKey:@"opacity"];//阴影转动效果
+//    
+//    self.view.layer.needsDisplayOnBoundsChange = YES;
+//    self.view.backgroundColor = [UIColor redColor];
+//    [UIView setAnimationCurve:UIViewAnimationCurveLinear];
+//    self.view.layer.position = CGPointMake(10, 10);
+//    self.view.layer.opacity = .4;
+}
+
+
+//图片
+-(CAAnimation*)animation {
+    
+    CAKeyframeAnimation* animation;
+    //创建一个动画对象
+    animation = [CAKeyframeAnimation animation];
+    //动画路径
+    animation.path = path;
+    //释放
+//    CGPathRelease(path);
+    //间隔时间.频率
+    animation.duration = 5;
+    //重复次数
+    animation.repeatCount = 2;
+    //计算模式
+    animation.calculationMode = @"cubic";
+    animation.calculationMode=kCAAnimationCubicPaced;
+    return animation;
+}
+
+//当前视图
+-(CAAnimation*)fadeInOutAnimation{
+    //通过keypath创建路径
+    CABasicAnimation* animation = [CABasicAnimation animationWithKeyPath:@"opacity"];
+    animation.duration = 5;
+    animation.repeatCount =10000;
+    animation.toValue = [NSNumber numberWithFloat:.4];
+    animation.autoreverses = YES;
+    return animation;
+}
+
 
 - (void)setupEventLayer {
     _eventLayer = [CAShapeLayer layer];
