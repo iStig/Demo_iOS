@@ -11,6 +11,7 @@
 #import "UIViewController+CreateSelf.h"
 #import "CAShapeLayerViewController.h"
 #import "MapPloylineViewController.h"
+#import "AutolayoutViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic, strong) IBOutlet UITableView *demoList;
@@ -21,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.demos = @[@"Translate",@"ShapeLayer",@"MapPloyline"];
+    self.demos = @[@"Translate",@"ShapeLayer",@"MapPloyline",@"Autolayout"];
     // Do any additional setup after loading the view, typically from a nib.
     [self.demoList registerClass:[UITableViewCell class] forCellReuseIdentifier:@"DemoCell"];
 }
@@ -60,6 +61,11 @@
             demo.title = self.demos[indexPath.row];
             [self.navigationController pushViewController:demo animated:YES];
             break;
+        }
+        case VC_Type_Autolayout:{
+            demo = [AutolayoutViewController createSelf];
+            demo.title = self.demos[indexPath.row];
+            [self.navigationController pushViewController:demo animated:YES];
         }
         default:
             break;

@@ -18,6 +18,8 @@
 		62052D6F1B147A6800F2BB9E /* UIImage+Decompression.m in Sources */ = {isa = PBXBuildFile; fileRef = 62052D6E1B147A6800F2BB9E /* UIImage+Decompression.m */; };
 		62052D721B147AB200F2BB9E /* NSCalendar+FSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 62052D711B147AB200F2BB9E /* NSCalendar+FSExtension.m */; };
 		62052D751B147ABA00F2BB9E /* NSString+parse.m in Sources */ = {isa = PBXBuildFile; fileRef = 62052D741B147ABA00F2BB9E /* NSString+parse.m */; };
+		621D3D351B6F474800640B58 /* AutolayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 621D3D331B6F474800640B58 /* AutolayoutViewController.m */; };
+		621D3D361B6F474800640B58 /* AutolayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 621D3D341B6F474800640B58 /* AutolayoutViewController.xib */; };
 		62700F121B1D8A5C004F9140 /* MapPloylineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62700F111B1D8A5C004F9140 /* MapPloylineViewController.m */; };
 		62700F1A1B1D8D81004F9140 /* EntranceToGoliathRoute.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62700F191B1D8D81004F9140 /* EntranceToGoliathRoute.plist */; };
 		62700F1D1B1D9BE1004F9140 /* SMAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 62700F1C1B1D9BE1004F9140 /* SMAnnotation.m */; };
@@ -68,6 +70,9 @@
 		62052D711B147AB200F2BB9E /* NSCalendar+FSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+FSExtension.m"; sourceTree = "<group>"; };
 		62052D731B147ABA00F2BB9E /* NSString+parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+parse.h"; sourceTree = "<group>"; };
 		62052D741B147ABA00F2BB9E /* NSString+parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+parse.m"; sourceTree = "<group>"; };
+		621D3D321B6F474800640B58 /* AutolayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutolayoutViewController.h; sourceTree = "<group>"; };
+		621D3D331B6F474800640B58 /* AutolayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutolayoutViewController.m; sourceTree = "<group>"; };
+		621D3D341B6F474800640B58 /* AutolayoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutolayoutViewController.xib; sourceTree = "<group>"; };
 		62700F101B1D8A5C004F9140 /* MapPloylineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPloylineViewController.h; sourceTree = "<group>"; };
 		62700F111B1D8A5C004F9140 /* MapPloylineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPloylineViewController.m; sourceTree = "<group>"; };
 		62700F191B1D8D81004F9140 /* EntranceToGoliathRoute.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EntranceToGoliathRoute.plist; sourceTree = "<group>"; };
@@ -186,6 +191,9 @@
 				62052D661B1479F900F2BB9E /* ViewController.m */,
 				62700F101B1D8A5C004F9140 /* MapPloylineViewController.h */,
 				62700F111B1D8A5C004F9140 /* MapPloylineViewController.m */,
+				621D3D321B6F474800640B58 /* AutolayoutViewController.h */,
+				621D3D331B6F474800640B58 /* AutolayoutViewController.m */,
+				621D3D341B6F474800640B58 /* AutolayoutViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -374,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62700F1A1B1D8D81004F9140 /* EntranceToGoliathRoute.plist in Resources */,
+				621D3D361B6F474800640B58 /* AutolayoutViewController.xib in Resources */,
 				6282DE031B0E0B72005CF07D /* Main.storyboard in Resources */,
 				6282DE081B0E0B72005CF07D /* LaunchScreen.xib in Resources */,
 				6282DE051B0E0B72005CF07D /* Images.xcassets in Resources */,
@@ -444,6 +453,7 @@
 				62C1A7CC1B15B22400700898 /* README.md in Sources */,
 				6282DDFA1B0E0B72005CF07D /* main.m in Sources */,
 				62700F121B1D8A5C004F9140 /* MapPloylineViewController.m in Sources */,
+				621D3D351B6F474800640B58 /* AutolayoutViewController.m in Sources */,
 				62052D6F1B147A6800F2BB9E /* UIImage+Decompression.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -571,8 +581,9 @@
 			baseConfigurationReference = 55B0664897BE2FFC28213901 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
 				INFOPLIST_FILE = Demo_iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -583,8 +594,9 @@
 			baseConfigurationReference = 291A82DF31F22C9EE09313EE /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
 				INFOPLIST_FILE = Demo_iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

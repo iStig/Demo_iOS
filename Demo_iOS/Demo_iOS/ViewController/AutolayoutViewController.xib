@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AutolayoutViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="boat" translatesAutoresizingMaskIntoConstraints="NO" id="aKE-d0-Pm4">
+                    <rect key="frame" x="10" y="44" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="QEy-ja-BIR"/>
+                        <constraint firstAttribute="height" constant="60" id="eDH-h3-ocr"/>
+                        <constraint firstAttribute="width" secondItem="aKE-d0-Pm4" secondAttribute="height" multiplier="1:1" id="lGB-YL-7I5"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="iStig" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWi-MZ-ybg">
+                    <rect key="frame" x="86" y="44" width="66" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="我有一只小毛驴我从来也不骑" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zqv-rj-389">
+                    <rect key="frame" x="86" y="83" width="198" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="wukong" translatesAutoresizingMaskIntoConstraints="NO" id="Emp-hL-Gzr">
+                    <rect key="frame" x="0.0" y="138" width="320" height="265"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Emp-hL-Gzr" secondAttribute="height" multiplier="1:1" id="fqt-2K-mxa"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="208个赞" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJZ-ux-6aF">
+                    <rect key="frame" x="46" y="425" width="264" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="boat" translatesAutoresizingMaskIntoConstraints="NO" id="rK1-Or-exh">
+                    <rect key="frame" x="10" y="422" width="26" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="26" id="CfI-6G-8Ur"/>
+                        <constraint firstAttribute="width" secondItem="rK1-Or-exh" secondAttribute="height" multiplier="26:26" id="hmy-nJ-ORD"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Zqv-rj-389" firstAttribute="leading" secondItem="aKE-d0-Pm4" secondAttribute="trailing" constant="16" id="19c-D2-Q58"/>
+                <constraint firstItem="rK1-Or-exh" firstAttribute="leading" secondItem="aKE-d0-Pm4" secondAttribute="leading" id="1Qb-Xx-4fF"/>
+                <constraint firstItem="gWi-MZ-ybg" firstAttribute="top" secondItem="aKE-d0-Pm4" secondAttribute="top" id="4ON-Ld-aK8"/>
+                <constraint firstItem="Zqv-rj-389" firstAttribute="top" secondItem="gWi-MZ-ybg" secondAttribute="bottom" constant="18" id="6Bj-b6-iLg"/>
+                <constraint firstItem="Emp-hL-Gzr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="A26-xg-bNf"/>
+                <constraint firstAttribute="trailing" secondItem="Zqv-rj-389" secondAttribute="trailing" constant="10" id="EkJ-cL-1Wg"/>
+                <constraint firstItem="rK1-Or-exh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="Gsq-Dw-n74"/>
+                <constraint firstItem="IJZ-ux-6aF" firstAttribute="leading" secondItem="rK1-Or-exh" secondAttribute="trailing" constant="10" id="MAk-Sa-ruW"/>
+                <constraint firstItem="Emp-hL-Gzr" firstAttribute="top" secondItem="aKE-d0-Pm4" secondAttribute="bottom" constant="34" id="O0y-6f-Ux4"/>
+                <constraint firstItem="rK1-Or-exh" firstAttribute="top" secondItem="aKE-d0-Pm4" secondAttribute="bottom" constant="8" id="O6M-It-gDB"/>
+                <constraint firstItem="Emp-hL-Gzr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YHi-hs-To9"/>
+                <constraint firstAttribute="trailing" secondItem="Zqv-rj-389" secondAttribute="trailing" constant="10" id="YzH-VJ-K9g"/>
+                <constraint firstItem="Emp-hL-Gzr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aTr-fj-R2j"/>
+                <constraint firstAttribute="trailing" secondItem="Emp-hL-Gzr" secondAttribute="trailing" id="add-k7-Yat"/>
+                <constraint firstItem="aKE-d0-Pm4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="bAg-BO-Wqp"/>
+                <constraint firstItem="rK1-Or-exh" firstAttribute="top" secondItem="Emp-hL-Gzr" secondAttribute="bottom" constant="19" id="c2x-wP-kuS"/>
+                <constraint firstAttribute="bottom" secondItem="Emp-hL-Gzr" secondAttribute="bottom" id="cRv-ha-ayE"/>
+                <constraint firstItem="aKE-d0-Pm4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="e7y-oc-3u0"/>
+                <constraint firstItem="aKE-d0-Pm4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="fuL-dM-jSs"/>
+                <constraint firstItem="gWi-MZ-ybg" firstAttribute="leading" secondItem="aKE-d0-Pm4" secondAttribute="trailing" constant="16" id="rhJ-w2-BIR"/>
+                <constraint firstItem="rK1-Or-exh" firstAttribute="top" secondItem="IJZ-ux-6aF" secondAttribute="top" id="tNn-jA-NDI"/>
+                <constraint firstItem="aKE-d0-Pm4" firstAttribute="leading" secondItem="Emp-hL-Gzr" secondAttribute="trailing" constant="16" id="wf9-I7-uHT"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="bAg-BO-Wqp"/>
+                    <exclude reference="e7y-oc-3u0"/>
+                    <exclude reference="fuL-dM-jSs"/>
+                    <exclude reference="wf9-I7-uHT"/>
+                    <exclude reference="EkJ-cL-1Wg"/>
+                    <exclude reference="YzH-VJ-K9g"/>
+                    <exclude reference="A26-xg-bNf"/>
+                    <exclude reference="O0y-6f-Ux4"/>
+                    <exclude reference="YHi-hs-To9"/>
+                    <exclude reference="aTr-fj-R2j"/>
+                    <exclude reference="add-k7-Yat"/>
+                    <exclude reference="cRv-ha-ayE"/>
+                    <exclude reference="1Qb-Xx-4fF"/>
+                    <exclude reference="Gsq-Dw-n74"/>
+                    <exclude reference="O6M-It-gDB"/>
+                    <exclude reference="c2x-wP-kuS"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact-widthClass=regular">
+                <mask key="constraints">
+                    <include reference="fuL-dM-jSs"/>
+                    <include reference="wf9-I7-uHT"/>
+                    <include reference="YzH-VJ-K9g"/>
+                    <include reference="A26-xg-bNf"/>
+                    <include reference="aTr-fj-R2j"/>
+                    <include reference="cRv-ha-ayE"/>
+                    <include reference="1Qb-Xx-4fF"/>
+                    <include reference="O6M-It-gDB"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="bAg-BO-Wqp"/>
+                    <include reference="e7y-oc-3u0"/>
+                    <include reference="EkJ-cL-1Wg"/>
+                    <include reference="O0y-6f-Ux4"/>
+                    <include reference="YHi-hs-To9"/>
+                    <include reference="add-k7-Yat"/>
+                    <include reference="Gsq-Dw-n74"/>
+                    <include reference="c2x-wP-kuS"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="boat" width="320" height="240"/>
+        <image name="wukong" width="213" height="310"/>
+    </resources>
+</document>
