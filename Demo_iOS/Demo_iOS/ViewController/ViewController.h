@@ -13,6 +13,7 @@ typedef NS_ENUM(NSUInteger, VC_Type) {
     VC_Type_ShapeLayer,
     VC_Type_MapPloyline,
     VC_Type_Autolayout,
+    VC_Type_ResizeCell,
 };
 
 @interface ViewController : BaseViewController

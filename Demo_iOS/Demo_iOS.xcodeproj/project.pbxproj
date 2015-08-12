@@ -20,6 +20,14 @@
 		62052D751B147ABA00F2BB9E /* NSString+parse.m in Sources */ = {isa = PBXBuildFile; fileRef = 62052D741B147ABA00F2BB9E /* NSString+parse.m */; };
 		621D3D351B6F474800640B58 /* AutolayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 621D3D331B6F474800640B58 /* AutolayoutViewController.m */; };
 		621D3D361B6F474800640B58 /* AutolayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 621D3D341B6F474800640B58 /* AutolayoutViewController.xib */; };
+		621D3D471B709A7C00640B58 /* AutoLayoutResizingTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 621D3D451B709A7C00640B58 /* AutoLayoutResizingTableViewViewController.m */; };
+		621D3D481B709A7C00640B58 /* AutoLayoutResizingTableViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 621D3D461B709A7C00640B58 /* AutoLayoutResizingTableViewViewController.xib */; };
+		621D3D4B1B709ADB00640B58 /* UIView+loadFromNib.m in Sources */ = {isa = PBXBuildFile; fileRef = 621D3D4A1B709ADB00640B58 /* UIView+loadFromNib.m */; };
+		621D3D521B709BEF00640B58 /* ResizingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 621D3D501B709BEF00640B58 /* ResizingTableViewCell.m */; };
+		621D3D531B709BEF00640B58 /* ResizingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 621D3D511B709BEF00640B58 /* ResizingTableViewCell.xib */; };
+		621D3D561B70B2E800640B58 /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 621D3D551B70B2E800640B58 /* UITableView+FDTemplateLayoutCell.m */; };
+		621D3D601B70C5B900640B58 /* HTKDynamicResizingCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 621D3D5A1B70C5B900640B58 /* HTKDynamicResizingCollectionViewCell.m */; };
+		621D3D611B70C5B900640B58 /* HTKDynamicResizingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 621D3D5F1B70C5B900640B58 /* HTKDynamicResizingTableViewCell.m */; };
 		62700F121B1D8A5C004F9140 /* MapPloylineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62700F111B1D8A5C004F9140 /* MapPloylineViewController.m */; };
 		62700F1A1B1D8D81004F9140 /* EntranceToGoliathRoute.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62700F191B1D8D81004F9140 /* EntranceToGoliathRoute.plist */; };
 		62700F1D1B1D9BE1004F9140 /* SMAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 62700F1C1B1D9BE1004F9140 /* SMAnnotation.m */; };
@@ -73,6 +81,21 @@
 		621D3D321B6F474800640B58 /* AutolayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutolayoutViewController.h; sourceTree = "<group>"; };
 		621D3D331B6F474800640B58 /* AutolayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutolayoutViewController.m; sourceTree = "<group>"; };
 		621D3D341B6F474800640B58 /* AutolayoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutolayoutViewController.xib; sourceTree = "<group>"; };
+		621D3D441B709A7C00640B58 /* AutoLayoutResizingTableViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutResizingTableViewViewController.h; sourceTree = "<group>"; };
+		621D3D451B709A7C00640B58 /* AutoLayoutResizingTableViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutResizingTableViewViewController.m; sourceTree = "<group>"; };
+		621D3D461B709A7C00640B58 /* AutoLayoutResizingTableViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoLayoutResizingTableViewViewController.xib; sourceTree = "<group>"; };
+		621D3D491B709ADB00640B58 /* UIView+loadFromNib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+loadFromNib.h"; sourceTree = "<group>"; };
+		621D3D4A1B709ADB00640B58 /* UIView+loadFromNib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+loadFromNib.m"; sourceTree = "<group>"; };
+		621D3D4F1B709BEF00640B58 /* ResizingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResizingTableViewCell.h; sourceTree = "<group>"; };
+		621D3D501B709BEF00640B58 /* ResizingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResizingTableViewCell.m; sourceTree = "<group>"; };
+		621D3D511B709BEF00640B58 /* ResizingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResizingTableViewCell.xib; sourceTree = "<group>"; };
+		621D3D541B70B2E800640B58 /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
+		621D3D551B70B2E800640B58 /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
+		621D3D591B70C5B900640B58 /* HTKDynamicResizingCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTKDynamicResizingCollectionViewCell.h; sourceTree = "<group>"; };
+		621D3D5A1B70C5B900640B58 /* HTKDynamicResizingCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTKDynamicResizingCollectionViewCell.m; sourceTree = "<group>"; };
+		621D3D5C1B70C5B900640B58 /* HTKDynamicResizingCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTKDynamicResizingCellProtocol.h; sourceTree = "<group>"; };
+		621D3D5E1B70C5B900640B58 /* HTKDynamicResizingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTKDynamicResizingTableViewCell.h; sourceTree = "<group>"; };
+		621D3D5F1B70C5B900640B58 /* HTKDynamicResizingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTKDynamicResizingTableViewCell.m; sourceTree = "<group>"; };
 		62700F101B1D8A5C004F9140 /* MapPloylineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPloylineViewController.h; sourceTree = "<group>"; };
 		62700F111B1D8A5C004F9140 /* MapPloylineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPloylineViewController.m; sourceTree = "<group>"; };
 		62700F191B1D8D81004F9140 /* EntranceToGoliathRoute.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EntranceToGoliathRoute.plist; sourceTree = "<group>"; };
@@ -140,6 +163,8 @@
 				62052D5B1B1479DB00F2BB9E /* UIImageView+shadower.m */,
 				62052D5C1B1479DB00F2BB9E /* UIViewController+CreateSelf.h */,
 				62052D5D1B1479DB00F2BB9E /* UIViewController+CreateSelf.m */,
+				621D3D491B709ADB00640B58 /* UIView+loadFromNib.h */,
+				621D3D4A1B709ADB00640B58 /* UIView+loadFromNib.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -184,9 +209,9 @@
 			isa = PBXGroup;
 			children = (
 				62052D611B1479F900F2BB9E /* CAShapeLayerViewController.h */,
-				62052D621B1479F900F2BB9E /* CAShapeLayerViewController.m */,
 				62052D631B1479F900F2BB9E /* TranslateViewController.h */,
 				62052D641B1479F900F2BB9E /* TranslateViewController.m */,
+				62052D621B1479F900F2BB9E /* CAShapeLayerViewController.m */,
 				62052D651B1479F900F2BB9E /* ViewController.h */,
 				62052D661B1479F900F2BB9E /* ViewController.m */,
 				62700F101B1D8A5C004F9140 /* MapPloylineViewController.h */,
@@ -194,8 +219,53 @@
 				621D3D321B6F474800640B58 /* AutolayoutViewController.h */,
 				621D3D331B6F474800640B58 /* AutolayoutViewController.m */,
 				621D3D341B6F474800640B58 /* AutolayoutViewController.xib */,
+				621D3D4F1B709BEF00640B58 /* ResizingTableViewCell.h */,
+				621D3D501B709BEF00640B58 /* ResizingTableViewCell.m */,
+				621D3D511B709BEF00640B58 /* ResizingTableViewCell.xib */,
+				621D3D541B70B2E800640B58 /* UITableView+FDTemplateLayoutCell.h */,
+				621D3D551B70B2E800640B58 /* UITableView+FDTemplateLayoutCell.m */,
+				621D3D441B709A7C00640B58 /* AutoLayoutResizingTableViewViewController.h */,
+				621D3D451B709A7C00640B58 /* AutoLayoutResizingTableViewViewController.m */,
+				621D3D461B709A7C00640B58 /* AutoLayoutResizingTableViewViewController.xib */,
+				621D3D571B70C5B900640B58 /* HTKDynamicResizingCell */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		621D3D571B70C5B900640B58 /* HTKDynamicResizingCell */ = {
+			isa = PBXGroup;
+			children = (
+				621D3D581B70C5B900640B58 /* CollectionView */,
+				621D3D5B1B70C5B900640B58 /* Protocol */,
+				621D3D5D1B70C5B900640B58 /* TableView */,
+			);
+			path = HTKDynamicResizingCell;
+			sourceTree = "<group>";
+		};
+		621D3D581B70C5B900640B58 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				621D3D591B70C5B900640B58 /* HTKDynamicResizingCollectionViewCell.h */,
+				621D3D5A1B70C5B900640B58 /* HTKDynamicResizingCollectionViewCell.m */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		621D3D5B1B70C5B900640B58 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				621D3D5C1B70C5B900640B58 /* HTKDynamicResizingCellProtocol.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		621D3D5D1B70C5B900640B58 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				621D3D5E1B70C5B900640B58 /* HTKDynamicResizingTableViewCell.h */,
+				621D3D5F1B70C5B900640B58 /* HTKDynamicResizingTableViewCell.m */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 		62700F131B1D8C2B004F9140 /* MapPloyline */ = {
@@ -381,10 +451,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				621D3D531B709BEF00640B58 /* ResizingTableViewCell.xib in Resources */,
 				62700F1A1B1D8D81004F9140 /* EntranceToGoliathRoute.plist in Resources */,
 				621D3D361B6F474800640B58 /* AutolayoutViewController.xib in Resources */,
 				6282DE031B0E0B72005CF07D /* Main.storyboard in Resources */,
 				6282DE081B0E0B72005CF07D /* LaunchScreen.xib in Resources */,
+				621D3D481B709A7C00640B58 /* AutoLayoutResizingTableViewViewController.xib in Resources */,
 				6282DE051B0E0B72005CF07D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,16 +510,21 @@
 			files = (
 				62052D691B1479F900F2BB9E /* ViewController.m in Sources */,
 				6282DDFD1B0E0B72005CF07D /* AppDelegate.m in Sources */,
+				621D3D4B1B709ADB00640B58 /* UIView+loadFromNib.m in Sources */,
 				62052D6C1B147A0100F2BB9E /* FoldingView.m in Sources */,
 				62C1A7CA1B15AB6600700898 /* SimpleAudioPlayer.m in Sources */,
 				62052D681B1479F900F2BB9E /* TranslateViewController.m in Sources */,
+				621D3D521B709BEF00640B58 /* ResizingTableViewCell.m in Sources */,
 				62052D671B1479F900F2BB9E /* CAShapeLayerViewController.m in Sources */,
+				621D3D471B709A7C00640B58 /* AutoLayoutResizingTableViewViewController.m in Sources */,
 				62052D5F1B1479DB00F2BB9E /* UIImageView+shadower.m in Sources */,
 				62052D751B147ABA00F2BB9E /* NSString+parse.m in Sources */,
 				62700F1D1B1D9BE1004F9140 /* SMAnnotation.m in Sources */,
+				621D3D561B70B2E800640B58 /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				62C1A7CF1B16B9D400700898 /* ColorfulProgress.m in Sources */,
 				62052D601B1479DB00F2BB9E /* UIViewController+CreateSelf.m in Sources */,
 				62052D721B147AB200F2BB9E /* NSCalendar+FSExtension.m in Sources */,
+				621D3D611B70C5B900640B58 /* HTKDynamicResizingTableViewCell.m in Sources */,
 				62052D571B1479CC00F2BB9E /* BaseViewController.m in Sources */,
 				62052D5E1B1479DB00F2BB9E /* UIImage+Blur.m in Sources */,
 				62C1A7CC1B15B22400700898 /* README.md in Sources */,
@@ -455,6 +532,7 @@
 				62700F121B1D8A5C004F9140 /* MapPloylineViewController.m in Sources */,
 				621D3D351B6F474800640B58 /* AutolayoutViewController.m in Sources */,
 				62052D6F1B147A6800F2BB9E /* UIImage+Decompression.m in Sources */,
+				621D3D601B70C5B900640B58 /* HTKDynamicResizingCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
