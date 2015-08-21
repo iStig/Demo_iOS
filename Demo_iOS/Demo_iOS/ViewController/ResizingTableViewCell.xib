@@ -4,7 +4,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -17,7 +16,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXn-Go-t5S">
-                        <rect key="frame" x="0.0" y="10" width="302" height="16"/>
+                        <rect key="frame" x="0.0" y="10" width="310" height="16"/>
                         <color key="backgroundColor" red="1" green="0.51764705879999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -44,10 +43,10 @@
                     <constraint firstItem="04E-Gh-mPI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="9nf-YO-KjO"/>
                     <constraint firstItem="vXn-Go-t5S" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="F9d-Ed-Opi"/>
                     <constraint firstAttribute="bottom" secondItem="04E-Gh-mPI" secondAttribute="bottom" constant="10" id="Jed-1q-qpG"/>
+                    <constraint firstAttribute="trailing" secondItem="vXn-Go-t5S" secondAttribute="trailing" constant="10" id="Jp6-is-oNq"/>
                     <constraint firstItem="vXn-Go-t5S" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Ksn-jH-Rah"/>
                     <constraint firstItem="04E-Gh-mPI" firstAttribute="top" secondItem="SUz-QK-Knz" secondAttribute="top" id="O4D-kc-75P"/>
-                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="SUz-QK-Knz" secondAttribute="trailing" constant="10" id="O5E-Ic-fSe"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="vXn-Go-t5S" secondAttribute="trailing" constant="10" id="YZ7-4U-mc2"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="SUz-QK-Knz" secondAttribute="trailing" constant="10" id="UY2-p4-lxN"/>
                     <constraint firstItem="04E-Gh-mPI" firstAttribute="top" secondItem="vXn-Go-t5S" secondAttribute="bottom" constant="13.5" id="kYq-7m-93z"/>
                 </constraints>
             </tableViewCellContentView>
@@ -55,7 +54,7 @@
                 <outlet property="content" destination="vXn-Go-t5S" id="vgQ-AV-dQP"/>
                 <outlet property="subContent" destination="04E-Gh-mPI" id="kwo-uk-zaB"/>
             </connections>
-            <point key="canvasLocation" x="319" y="297.5"/>
+            <point key="canvasLocation" x="310" y="297.5"/>
         </tableViewCell>
     </objects>
     <resources>

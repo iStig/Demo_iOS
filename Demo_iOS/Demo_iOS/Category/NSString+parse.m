@@ -20,7 +20,7 @@
 
 - (BOOL)parse_isEqualToString:(NSString *)aString {
     [self parse_isEqualToString:aString];
-    NSLog(@"$");
+//    NSLog(@"$");
     return self == aString? YES: NO;
 }
 

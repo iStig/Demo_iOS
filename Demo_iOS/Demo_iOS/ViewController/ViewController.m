@@ -13,7 +13,8 @@
 #import "MapPloylineViewController.h"
 #import "AutolayoutViewController.h"
 #import "AutoLayoutResizingTableViewViewController.h"
-
+#import "Demo_iOS-Bridging-Header.h"
+#import "SwiftDemo-swift.h"
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic, strong) IBOutlet UITableView *demoList;
 @property (nonatomic, strong) NSArray *demos;
@@ -23,7 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.demos = @[@"TranslateViewController",@"CAShapeLayerViewController",@"MapPloylineViewController",@"AutolayoutViewController",@"AutoLayoutResizingTableViewViewController"];
+    self.demos = @[@"TranslateViewController",@"CAShapeLayerViewController",@"MapPloylineViewController",@"AutolayoutViewController",@"AutoLayoutResizingTableViewViewController",@"Swift_CGAffineTransformTranslateViewController"];
     // Do any additional setup after loading the view, typically from a nib.
     [self.demoList registerClass:[UITableViewCell class] forCellReuseIdentifier:@"DemoCell"];
 }
@@ -44,9 +45,18 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     
-    UIViewController *v = (UIViewController *)[[NSClassFromString(self.demos[indexPath.row]) alloc] init];
+    NSString *vc_string = self.demos[indexPath.row];
+    if ([vc_string hasPrefix:@"Swift_"]) {
+        vc_string = [vc_string substringFromIndex:6];
+        UIViewController *v = [[CGAffineTransformTranslateViewController alloc] initWithNibName:vc_string bundle:nil];
+        [self.navigationController pushViewController:v animated:YES];
+    }
+    else {
+    
+    UIViewController *v = (UIViewController *)[[NSClassFromString(vc_string) alloc] init];
     [self.navigationController pushViewController:v animated:YES];
     
+    }
     
     
     
@@ -88,6 +98,7 @@
 //            break;
 //    }
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

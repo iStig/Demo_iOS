@@ -37,6 +37,8 @@
 		6282DE051B0E0B72005CF07D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6282DE041B0E0B72005CF07D /* Images.xcassets */; };
 		6282DE081B0E0B72005CF07D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6282DE061B0E0B72005CF07D /* LaunchScreen.xib */; };
 		6282DE141B0E0B72005CF07D /* Demo_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6282DE131B0E0B72005CF07D /* Demo_iOSTests.m */; };
+		62A6372F1B85E3C6005D310F /* CGAffineTransformTranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6372D1B85E3C6005D310F /* CGAffineTransformTranslateViewController.swift */; };
+		62A637301B85E3C6005D310F /* CGAffineTransformTranslateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62A6372E1B85E3C6005D310F /* CGAffineTransformTranslateViewController.xib */; };
 		62C1A7CA1B15AB6600700898 /* SimpleAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C1A7C91B15AB6600700898 /* SimpleAudioPlayer.m */; };
 		62C1A7CC1B15B22400700898 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 62C1A7CB1B15B22400700898 /* README.md */; };
 		62C1A7CF1B16B9D400700898 /* ColorfulProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C1A7CE1B16B9D400700898 /* ColorfulProgress.m */; };
@@ -112,6 +114,9 @@
 		6282DE0D1B0E0B72005CF07D /* Demo_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Demo_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6282DE121B0E0B72005CF07D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6282DE131B0E0B72005CF07D /* Demo_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo_iOSTests.m; sourceTree = "<group>"; };
+		62A6372C1B85E3C5005D310F /* Demo_iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demo_iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		62A6372D1B85E3C6005D310F /* CGAffineTransformTranslateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGAffineTransformTranslateViewController.swift; sourceTree = "<group>"; };
+		62A6372E1B85E3C6005D310F /* CGAffineTransformTranslateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CGAffineTransformTranslateViewController.xib; sourceTree = "<group>"; };
 		62C1A7C81B15AB6600700898 /* SimpleAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAudioPlayer.h; sourceTree = "<group>"; };
 		62C1A7C91B15AB6600700898 /* SimpleAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleAudioPlayer.m; sourceTree = "<group>"; };
 		62C1A7CB1B15B22400700898 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -227,7 +232,10 @@
 				621D3D441B709A7C00640B58 /* AutoLayoutResizingTableViewViewController.h */,
 				621D3D451B709A7C00640B58 /* AutoLayoutResizingTableViewViewController.m */,
 				621D3D461B709A7C00640B58 /* AutoLayoutResizingTableViewViewController.xib */,
+				62A6372D1B85E3C6005D310F /* CGAffineTransformTranslateViewController.swift */,
+				62A6372E1B85E3C6005D310F /* CGAffineTransformTranslateViewController.xib */,
 				621D3D571B70C5B900640B58 /* HTKDynamicResizingCell */,
+				62A6372C1B85E3C5005D310F /* Demo_iOS-Bridging-Header.h */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -452,6 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				621D3D531B709BEF00640B58 /* ResizingTableViewCell.xib in Resources */,
+				62A637301B85E3C6005D310F /* CGAffineTransformTranslateViewController.xib in Resources */,
 				62700F1A1B1D8D81004F9140 /* EntranceToGoliathRoute.plist in Resources */,
 				621D3D361B6F474800640B58 /* AutolayoutViewController.xib in Resources */,
 				6282DE031B0E0B72005CF07D /* Main.storyboard in Resources */,
@@ -525,6 +534,7 @@
 				62052D601B1479DB00F2BB9E /* UIViewController+CreateSelf.m in Sources */,
 				62052D721B147AB200F2BB9E /* NSCalendar+FSExtension.m in Sources */,
 				621D3D611B70C5B900640B58 /* HTKDynamicResizingTableViewCell.m in Sources */,
+				62A6372F1B85E3C6005D310F /* CGAffineTransformTranslateViewController.swift in Sources */,
 				62052D571B1479CC00F2BB9E /* BaseViewController.m in Sources */,
 				62052D5E1B1479DB00F2BB9E /* UIImage+Blur.m in Sources */,
 				62C1A7CC1B15B22400700898 /* README.md in Sources */,
@@ -660,10 +670,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = NO;
 				INFOPLIST_FILE = Demo_iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_MODULE_NAME = SwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Demo_iOS/ViewController/Demo_iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -673,10 +688,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = NO;
 				INFOPLIST_FILE = Demo_iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_MODULE_NAME = SwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Demo_iOS/ViewController/Demo_iOS-Bridging-Header.h";
 			};
 			name = Release;
 		};

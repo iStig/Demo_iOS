@@ -18,8 +18,52 @@
 @implementation TranslateViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+//    [self constraintV1];
+//    [self constraintV2];
     [self setUpRotateImage];
     [self setUpFlowImage];
+}
+
+
+- (void)constraintV1 {
+    UIButton * button1 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    button1.translatesAutoresizingMaskIntoConstraints = NO;
+    [button1 setTitle:@"button 1 button 2" forState:UIControlStateNormal];
+    button1.backgroundColor = [UIColor redColor];
+    [button1 sizeToFit];
+    
+    [self.view addSubview:button1];
+    
+    NSLayoutConstraint *constraint = [NSLayoutConstraint constraintWithItem:button1 attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1.0f constant:100.0f];
+    [self.view addConstraint:constraint];
+    
+    constraint = [NSLayoutConstraint constraintWithItem:button1 attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1.0f constant:100.0f];
+    [self.view addConstraint:constraint];
+    
+    constraint = [NSLayoutConstraint constraintWithItem:button1 attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTrailing multiplier:1.0f constant:-150.0f];
+    constraint.priority = 751.0f;//此时autolayout系统会去首先满足此constraint，再去满足Content Compression Resistance（其优先级为750，小于751）。 通俗点约束力比我自身默认的大  强行让我收缩
+    [self.view addConstraint:constraint];
+}
+
+- (void)constraintV2 {
+    UIButton*  button1 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    button1.translatesAutoresizingMaskIntoConstraints = NO;
+    [button1 setTitle:@"button 1 button 2" forState:UIControlStateNormal];
+    button1.backgroundColor = [UIColor redColor];
+    [button1 sizeToFit];
+    
+    [self.view addSubview:button1];
+    
+    NSLayoutConstraint *constraint = [NSLayoutConstraint constraintWithItem:button1 attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1.0f constant:100.0f];
+    [self.view addConstraint:constraint];
+    
+    constraint = [NSLayoutConstraint constraintWithItem:button1 attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1.0f constant:200.0f];
+    [self.view addConstraint:constraint];
+    
+    constraint = [NSLayoutConstraint constraintWithItem:button1 attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTrailing multiplier:1.0f constant:-10.0f];
+    constraint.priority = 251.0f;//此时autolayout系统会去首先满足此constraint，再去满足Content Hugging（其优先级为250，小于251）。  通俗点约束力比我自身默认的大  强行让我拉伸
+    [self.view addConstraint:constraint];
 }
 
 - (void)setUpRotateImage {
