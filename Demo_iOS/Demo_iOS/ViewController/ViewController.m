@@ -24,7 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.demos = @[@"TranslateViewController",@"CAShapeLayerViewController",@"MapPloylineViewController",@"AutolayoutViewController",@"AutoLayoutResizingTableViewViewController",@"Swift_CGAffineTransformTranslateViewController"];
+    self.demos = @[@"TranslateViewController",@"CAShapeLayerViewController",@"MapPloylineViewController",@"AutolayoutViewController",@"AutoLayoutResizingTableViewViewController",@"Swift_CGAffineTransformTranslateViewController",@"FontTableViewController"];
     // Do any additional setup after loading the view, typically from a nib.
     [self.demoList registerClass:[UITableViewCell class] forCellReuseIdentifier:@"DemoCell"];
 }
@@ -57,46 +57,7 @@
     [self.navigationController pushViewController:v animated:YES];
     
     }
-    
-    
-    
-    
-//    UIViewController *demo = nil;
-//    
-//    switch (indexPath.row) {
-//        case VC_Type_Translate: {
-//            demo = [TranslateViewController createSelf];
-//            demo.title = self.demos[indexPath.row];
-//            [self.navigationController pushViewController:demo animated:YES];
-//            break;
-//        }
-//        case VC_Type_ShapeLayer: {
-//            demo = [CAShapeLayerViewController createSelf];
-//            demo.title = self.demos[indexPath.row];
-//            [self.navigationController pushViewController:demo animated:YES];
-//            break;
-//        }
-//        case VC_Type_MapPloyline: {
-//            demo = [MapPloylineViewController createSelf];
-//            demo.title = self.demos[indexPath.row];
-//            [self.navigationController pushViewController:demo animated:YES];
-//            break;
-//        }
-//        case VC_Type_Autolayout: {
-//            demo = [AutolayoutViewController createSelf];
-//            demo.title = self.demos[indexPath.row];
-//            [self.navigationController pushViewController:demo animated:YES];
-//            break;
-//        }
-//        case VC_Type_ResizeCell: {
-//            demo = [AutoLayoutResizingTableViewViewController createSelf];
-//            demo.title = self.demos[indexPath.row];
-//            [self.navigationController pushViewController:demo animated:YES];
-//            break;
-//        }
-//        default:
-//            break;
-//    }
+
 }
 
 

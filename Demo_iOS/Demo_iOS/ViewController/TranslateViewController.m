@@ -23,8 +23,38 @@
 //    [self constraintV2];
     [self setUpRotateImage];
     [self setUpFlowImage];
+  
+//  UITextField *text  = [[UITextField alloc] initWithFrame:CGRectMake(10, 50, 200, 50)];
+//  [text becomeFirstResponder];
+//  [self.view addSubview:text];
 }
 
+-(BOOL)canBecomeFirstResponder{
+  return YES;
+}
+
+//-(NSArray *)keyCommands{
+//  //组合键
+//  return @[[UIKeyCommand keyCommandWithInput:UIKeyInputEscape modifierFlags:UIKeyModifierShift action:@selector(escapeShiftKeyPressed:)]];
+//}
+//
+//-(void)escapeShiftKeyPressed:(UIKeyCommand *)keyCommand{
+//  UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"UIKeyCommand Demo" message:[NSString stringWithFormat:@"%@ pressed", keyCommand.input] delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+//  [alertView show];
+//}
+
+- (NSArray *)keyCommands
+{
+  return @[[UIKeyCommand keyCommandWithInput:@"f"
+                               modifierFlags:UIKeyModifierCommand
+                                      action:@selector(searchKeyPressed:)]];
+}
+
+- (void)searchKeyPressed:(UIKeyCommand *)keyCommand
+{
+  
+  // Respond to the event
+}
 
 - (void)constraintV1 {
     UIButton * button1 = [UIButton buttonWithType:UIButtonTypeRoundedRect];

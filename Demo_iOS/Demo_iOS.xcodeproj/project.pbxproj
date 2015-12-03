@@ -31,6 +31,7 @@
 		62700F121B1D8A5C004F9140 /* MapPloylineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62700F111B1D8A5C004F9140 /* MapPloylineViewController.m */; };
 		62700F1A1B1D8D81004F9140 /* EntranceToGoliathRoute.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62700F191B1D8D81004F9140 /* EntranceToGoliathRoute.plist */; };
 		62700F1D1B1D9BE1004F9140 /* SMAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 62700F1C1B1D9BE1004F9140 /* SMAnnotation.m */; };
+		627D014D1B969B5700356CBE /* FontTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 627D014C1B969B5700356CBE /* FontTableViewController.m */; };
 		6282DDFA1B0E0B72005CF07D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6282DDF91B0E0B72005CF07D /* main.m */; };
 		6282DDFD1B0E0B72005CF07D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6282DDFC1B0E0B72005CF07D /* AppDelegate.m */; };
 		6282DE031B0E0B72005CF07D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6282DE011B0E0B72005CF07D /* Main.storyboard */; };
@@ -103,6 +104,8 @@
 		62700F191B1D8D81004F9140 /* EntranceToGoliathRoute.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EntranceToGoliathRoute.plist; sourceTree = "<group>"; };
 		62700F1B1B1D9BE1004F9140 /* SMAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMAnnotation.h; sourceTree = "<group>"; };
 		62700F1C1B1D9BE1004F9140 /* SMAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMAnnotation.m; sourceTree = "<group>"; };
+		627D014B1B969B5700356CBE /* FontTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontTableViewController.h; sourceTree = "<group>"; };
+		627D014C1B969B5700356CBE /* FontTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontTableViewController.m; sourceTree = "<group>"; };
 		6282DDF41B0E0B72005CF07D /* Demo_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6282DDF81B0E0B72005CF07D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6282DDF91B0E0B72005CF07D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -214,9 +217,9 @@
 			isa = PBXGroup;
 			children = (
 				62052D611B1479F900F2BB9E /* CAShapeLayerViewController.h */,
+				62052D621B1479F900F2BB9E /* CAShapeLayerViewController.m */,
 				62052D631B1479F900F2BB9E /* TranslateViewController.h */,
 				62052D641B1479F900F2BB9E /* TranslateViewController.m */,
-				62052D621B1479F900F2BB9E /* CAShapeLayerViewController.m */,
 				62052D651B1479F900F2BB9E /* ViewController.h */,
 				62052D661B1479F900F2BB9E /* ViewController.m */,
 				62700F101B1D8A5C004F9140 /* MapPloylineViewController.h */,
@@ -234,6 +237,8 @@
 				621D3D461B709A7C00640B58 /* AutoLayoutResizingTableViewViewController.xib */,
 				62A6372D1B85E3C6005D310F /* CGAffineTransformTranslateViewController.swift */,
 				62A6372E1B85E3C6005D310F /* CGAffineTransformTranslateViewController.xib */,
+				627D014B1B969B5700356CBE /* FontTableViewController.h */,
+				627D014C1B969B5700356CBE /* FontTableViewController.m */,
 				621D3D571B70C5B900640B58 /* HTKDynamicResizingCell */,
 				62A6372C1B85E3C5005D310F /* Demo_iOS-Bridging-Header.h */,
 			);
@@ -423,6 +428,8 @@
 		6282DDEC1B0E0B72005CF07D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = iStig;
 				TargetAttributes = {
@@ -524,6 +531,7 @@
 				62C1A7CA1B15AB6600700898 /* SimpleAudioPlayer.m in Sources */,
 				62052D681B1479F900F2BB9E /* TranslateViewController.m in Sources */,
 				621D3D521B709BEF00640B58 /* ResizingTableViewCell.m in Sources */,
+				627D014D1B969B5700356CBE /* FontTableViewController.m in Sources */,
 				62052D671B1479F900F2BB9E /* CAShapeLayerViewController.m in Sources */,
 				621D3D471B709A7C00640B58 /* AutoLayoutResizingTableViewViewController.m in Sources */,
 				62052D5F1B1479DB00F2BB9E /* UIImageView+shadower.m in Sources */,

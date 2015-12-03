@@ -40,8 +40,36 @@
 
 }
 
+//let replicatorLayer = CAReplicatorLayer()
+//replicatorLayer.bounds = CGRect(x: 0, y: 0, width: activityIndicatorView.frame.size.width, height: activityIndicatorView.frame.size.height)
+//replicatorLayer.position = CGPoint(x: activityIndicatorView.frame.size.width/2, y: activityIndicatorView.frame.size.height/2)
+//replicatorLayer.backgroundColor = UIColor.lightGrayColor().CGColor
+//activityIndicatorView.layer.addSublayer(replicatorLayer)
+//
+//let circle = CALayer()
+//circle.bounds = CGRect(x: 0, y: 0, width: 15, height: 15)
+//circle.position = CGPoint(x: activityIndicatorView.frame.size.width/2, y: activityIndicatorView.frame.size.height/2 - 55)
+//circle.cornerRadius = 7.5
+//circle.backgroundColor = UIColor.whiteColor().CGColor
+//replicatorLayer.addSublayer(circle)
+//
+//replicatorLayer.instanceCount = 15
+//let angle = CGFloat(2 * M_PI) / CGFloat(15)
+//replicatorLayer.instanceTransform = CATransform3DMakeRotation(angle, 0, 0, 1)
+//
+//let scale = CABasicAnimation(keyPath: "transform.scale")
+//scale.fromValue = 1
+//scale.toValue = 0.1
+//scale.duration = 1
+//scale.repeatCount = HUGE
+//circle.addAnimation(scale, forKey: nil)
+//
+//replicatorLayer.instanceDelay = 1/15
+//
+//circle.transform = CATransform3DMakeScale(0.01, 0.01, 0.01)
+
 - (void)setupRotateView {
-    _rotateView = [[UIView alloc] initWithFrame:CGRectMake(50, 400, 100, 100)];
+    _rotateView = [[UIView alloc] initWithFrame:CGRectMake(50, 400, 140, 140)];
     _rotateView.backgroundColor = [UIColor blueColor];
 //    _rotateView.layer.anchorPoint = CGPointMake(1, 1);
 //    _rotateView.layer.position = CGPointMake(120, 120);
@@ -50,6 +78,34 @@
     NSLog(@"anchorPoint.X:%f  anchorPoint.Y:%f",_rotateView.layer.anchorPoint.x,_rotateView.layer.anchorPoint.y);
     [self.view addSubview:_rotateView];
 //    [self setAnchorPoint:CGPointMake(1, 1) forView:_rotateView];
+    
+    CAReplicatorLayer *replicatorLayer = [[CAReplicatorLayer alloc] init];
+    replicatorLayer.bounds = CGRectMake(0, 0, _rotateView.frame.size.width, _rotateView.frame.size.height);
+    replicatorLayer.position =CGPointMake(_rotateView.frame.size.width/2, _rotateView.frame.size.height/2);
+    replicatorLayer.backgroundColor = [UIColor lightGrayColor].CGColor;
+    [_rotateView.layer addSublayer:replicatorLayer];
+    
+    CALayer *circle = [[CALayer alloc] init];
+    circle.bounds = CGRectMake(0, 0, 15, 15);
+    circle.cornerRadius = 7.5;
+    circle.position = CGPointMake(_rotateView.frame.size.width/2, _rotateView.frame.size.height/2 - 55);
+    circle.backgroundColor = [UIColor whiteColor].CGColor;
+    [replicatorLayer addSublayer:circle];
+    
+    replicatorLayer.instanceCount = 15;
+    CGFloat angle = 2 * M_PI / 15 ;
+    replicatorLayer.instanceTransform =  CATransform3DMakeRotation(angle, 0, 0, 1) ;
+    
+    
+    CABasicAnimation *scale = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+    scale.fromValue = @1;
+    scale.toValue = @0.1;
+    scale.duration = 1;
+    scale.repeatCount = HUGE;
+    [circle addAnimation:scale forKey:nil];
+    
+    replicatorLayer.instanceDelay = 0.06666667;
+    circle.transform = CATransform3DMakeScale(0.01, 0.01, 0.01);
 }
 
 
